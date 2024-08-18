@@ -1,0 +1,42 @@
+{
+
+    "Professor" : "Jonas",
+    "Assunto" : "S02",
+    "Alunos" : [
+        {
+            "Nome" : "Joaquim",
+            "Idade" : 19,
+            "Curso" : {
+                "Nome" : "Engenharia de Software", "coordenador" : "Renzo"
+            },
+            "Periodo" : 6
+        },
+        {
+
+            "Nome" : "Jorge",
+            "Idade" : 21,
+            "Curso" : {
+                "Nome" : "Engenharia de Producao", "coordenador" : "Kiko"
+            },
+            "Periodo" : 7
+        },
+        {
+                
+                "Nome" : "Taguti",
+                "Idade" : 22,
+                "Curso" : {
+                    "Nome" : "Engenharia de Telecom", "coordenador" : "Marcelo"
+                },
+                "Periodo" : 6
+        },
+        {
+                "Nome" : "Sarlo",
+                "Idade" : 23,
+                "Curso" : {
+                    "Nome" : "Engenharia Biomedica", "coordenador" : "Fabiano"
+                },
+                "Periodo" : 7        
+                      
+        }
+    ]
+}

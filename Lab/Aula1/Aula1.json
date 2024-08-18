@@ -1,0 +1,42 @@
+{
+
+    "Professor" : "KIKO",
+    "Assunto" : "Circuitos 1",
+    "Alunos" : [
+        {
+            "Nome" : "Alvaro",
+            "Idade" : 20,
+            "Curso" : {
+                "Nome" : "Engenharia de Software", "coordenador" : "Renzo"
+            },
+            "Periodo" : 6
+        },
+        {
+
+            "Nome" : "João",
+            "Idade" : 21,
+            "Curso" : {
+                "Nome" : "Engenharia de Software", "coordenador" : "Renzo"
+            },
+            "Periodo" : 6
+        },
+        {
+                
+                "Nome" : "Maria",
+                "Idade" : 22,
+                "Curso" : {
+                    "Nome" : "Engenharia de Computação", "coordenador" : "Renzo"
+                },
+                "Periodo" : 5
+        },
+        {
+                "Nome" : "Pedro",
+                "Idade" : 23,
+                "Curso" : {
+                    "Nome" : "Engenharia de Computação", "coordenador" : "Renzo"
+                },
+                "Periodo" : 9        
+                      
+        }
+    ]
+}

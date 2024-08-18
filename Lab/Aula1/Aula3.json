@@ -1,0 +1,42 @@
+{
+
+    "Professor" : "Yvo",
+    "Assunto" : "Otimização",
+    "Alunos" : [
+        {
+            "Nome" : "Luiz",
+            "Idade" : 20,
+            "Curso" : {
+                "Nome" : "Engenharia de Software", "coordenador" : "Renzo"
+            },
+            "Periodo" : 6
+        },
+        {
+
+            "Nome" : "Fabio",
+            "Idade" : 21,
+            "Curso" : {
+                "Nome" : "Engenharia de Controle e Automação", "coordenador" : "Baratela"
+            },
+            "Periodo" : 7
+        },
+        {
+                
+                "Nome" : "Joao Guilherme",
+                "Idade" : 22,
+                "Curso" : {
+                    "Nome" : "Engenharia de Software", "coordenador" : "Renzo"
+                },
+                "Periodo" : 3
+        },
+        {
+                "Nome" : "Schiulz",
+                "Idade" : 21,
+                "Curso" : {
+                    "Nome" : "Engenharia de Producao", "coordenador" : "KIKO"
+                },
+                "Periodo" : 5       
+                      
+        }
+    ]
+}
