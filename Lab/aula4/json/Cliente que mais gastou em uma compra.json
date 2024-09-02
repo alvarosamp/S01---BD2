@@ -1,0 +1,9 @@
+[
+    {
+        "_id": {
+            "cliente_id": 6,
+            "data_compra": "2022-03-13"
+        },
+        "total_gasto": 71.95
+    }
+]
