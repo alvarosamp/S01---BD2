@@ -1,0 +1,54 @@
+from pymongo import MongoClient
+from bson.objectid import ObjectId
+
+class BookModel:
+    def __init__(self, database):
+        self.db = database
+
+    def create_book(self, _id: int, titulo: str, autor: str, ano: int, preco: float):
+        try:
+            res = self.db.collection.insert_one({
+                "_id": _id,  # Usando o _id manualmente
+                "titulo": titulo,
+                "autor": autor,
+                "ano": ano,
+                "preco": preco
+            })
+            print(f"Book created with id: {res.inserted_id}")
+            return res.inserted_id
+        except Exception as e:
+            print(f"An error occurred while creating book: {e}")
+            return None
+
+    def read_book_by_id(self, _id: int):
+        try:
+            res = self.db.collection.find_one({"_id": _id})  # Garante que _id seja um int
+            if res:
+                print(f"Book found: {res}")
+            else:
+                print("Book not found.")
+            return res
+        except Exception as e:
+            print(f"An error occurred while reading book: {e}")
+            return None
+
+    def update_book(self, _id: int, titulo: str, autor: str, ano: int, preco: float):
+        try:
+            res = self.db.collection.update_one(
+                {"_id": _id},  # Usando _id como inteiro
+                {"$set": {"titulo": titulo, "autor": autor, "ano": ano, "preco": preco}}
+            )
+            print(f"Book updated: {res.modified_count} document(s) modified")
+            return res.modified_count
+        except Exception as e:
+            print(f"An error occurred while updating book: {e}")
+            return None
+
+    def delete_book(self, _id: int):
+        try:
+            res = self.db.collection.delete_one({"_id": _id})  # Usando _id como inteiro
+            print(f"Book deleted: {res.deleted_count} document(s) deleted")
+            return res.deleted_count
+        except Exception as e:
+            print(f"An error occurred while deleting book: {e}")
+            return None
